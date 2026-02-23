@@ -1,0 +1,26 @@
+{
+  "zotero": {
+    "user_id": "YOUR_ZOTERO_USER_ID",
+    "api_key_env": "ZOTERO_API_KEY",
+    "library_type": "user"
+  },
+  "chromadb": {
+    "persist_directory": "~/.openclaw/workspace/research-vector-db",
+    "embedding_model": "sentence-transformers/all-mpnet-base-v2"
+  },
+  "llm": {
+    "model": "grok-41-fast",
+    "api_key_env": "VENICE_API_KEY",
+    "base_url": "https://api.venice.ai/v1",
+    "temperature": 0.4
+  },
+  "sync": {
+    "batch_size": 50,
+    "download_pdfs": true,
+    "pdf_cache": "~/.openclaw/workspace/zotero-pdfs"
+  },
+  "voyage": {
+    "api_key_env": "VOYAGE_API_KEY",
+    "embedding_model": "voyage-2"
+  }
+}

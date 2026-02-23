@@ -1,0 +1,23 @@
+# Megabrain v3.1 Requirements
+# Install: pip install -r requirements.txt
+
+requests>=2.31.0
+pyzotero>=1.6.2
+beautifulsoup4>=4.12.2
+yt-dlp>=2024.02.21
+PyMuPDF>=1.23.5  # PDF text extraction
+faiss-cpu>=1.7.4  # FAISS vector index
+numpy>=1.26.0    # FAISS dependency
+voyageai>=0.1.0  # Voyage embeddings/rerank
+torch>=2.1.0     # CPU thread control (faiss compat)
+
+# LangChain stack
+langchain-core>=0.1.0
+langchain-community>=0.0.10
+langchain-text-splitters>=0.0.1
+langchain-openai>=0.0.2
+langchain-voyageai>=0.0.1
+langchain-classic>=0.3.0  # For RetrievalQA chain
+
+# Optional fallback (local embeddings)
+# sentence-transformers>=2.2.2  # all-mpnet-base-v2
